@@ -1,4 +1,6 @@
-package java;
+package javacode;
+
+import java.util.stream.Stream;
 
 public class EvenFibonacci {
     /**
@@ -20,10 +22,10 @@ public class EvenFibonacci {
 
         while(true){
             next = previous + last;
-            System.out.println(next);
             if(next>limit){
                 break;
             }
+            System.out.println(next);
             if(next % 2 == 0){
                 sum += next;
             }
